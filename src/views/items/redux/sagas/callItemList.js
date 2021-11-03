@@ -9,10 +9,7 @@ function fetchItemListData() {
   const options = {};
 
   return axios
-    .get(
-      "https://my-json-server.typicode.com/prasadhewage/ecommerce/shipments",
-      options
-    )
+    .get(process.env.REACT_APP_API_URL, options)
     .then((response) => response.data)
     .catch((error) => error);
 }

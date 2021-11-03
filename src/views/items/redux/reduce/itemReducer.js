@@ -38,7 +38,7 @@ export default function itemReducer(state = initialState, action) {
     case ADD_TO_CART_ACTION:
       return {
         ...state,
-        cartItemIdList: state.cartItemIdList.push(action.itemId),
+        cartItemIdList: [...state.cartItemIdList, action.itemId],
       };
     case REMOVE_FROM_CART_ACTION:
       return {

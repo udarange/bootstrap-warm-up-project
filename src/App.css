@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.btn-circle {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  border: none;
+  margin: 0 5px 5px 0;
+  font-size: 12px;
+  font-weight: bold;
+}
