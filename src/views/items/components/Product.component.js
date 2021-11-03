@@ -1,6 +1,6 @@
-import { addToCartAction } from "../redux/actions/itemAction";
 import React from "react";
 import { useDispatch } from "react-redux";
+import { addToCartAction } from "../../cart/redux/actions/itemAction";
 
 export default function Product({ item }) {
   const dispatch = useDispatch();

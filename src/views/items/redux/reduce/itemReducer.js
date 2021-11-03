@@ -1,13 +1,10 @@
 import {
-  ADD_TO_CART_ACTION,
   FETCH_ITEM_LIST_ACTION,
   FETCH_ITEM_LIST_FAILURE_ACTION,
   FETCH_ITEM_LIST_SUCCESS_ACTION,
-  REMOVE_FROM_CART_ACTION,
 } from "../actions/actionType";
 
 let initialState = {
-  cartItemIdList: [],
   itemList: [],
   itemListIsLoading: false,
   itemListHasError: false,
@@ -34,18 +31,6 @@ export default function itemReducer(state = initialState, action) {
         itemList: [],
         itemListIsLoading: false,
         itemListHasError: true,
-      };
-    case ADD_TO_CART_ACTION:
-      return {
-        ...state,
-        cartItemIdList: [...state.cartItemIdList, action.itemId],
-      };
-    case REMOVE_FROM_CART_ACTION:
-      return {
-        ...state,
-        cartItemIdList: state.cartItemIdList.filter(
-          (el) => el !== action.itemId
-        ),
       };
     default:
       return state;
