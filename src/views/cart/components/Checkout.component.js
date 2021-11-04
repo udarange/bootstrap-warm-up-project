@@ -3,13 +3,11 @@ import React from "react";
 export default function Checkout() {
   return (
     <button
-      type="button"
+      className="btn btn-block m-4 p-0 w-100"
       style={{
         background: "black",
-        width: "90%",
         color: "white",
         height: "44px",
-        margin: "20px",
       }}
     >
       Checkout

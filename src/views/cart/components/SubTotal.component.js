@@ -2,16 +2,7 @@ import React from "react";
 
 export default function SubTotal({ subtotal }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        width: "100%",
-        padding: "0 20px",
-        alignItems: "center",
-      }}
-    >
+    <div className="d-flex flex-row justify-content-between w-100 align-items-center px-4">
       <p
         className="text-left font-weight-bold m-0"
         style={{ fontSize: "20px", color: "gray" }}
@@ -19,12 +10,10 @@ export default function SubTotal({ subtotal }) {
         SUBTOTAL
       </p>
       <p
-        className="m-0"
+        className="m-0 font-weight-bold flex-nowrap"
         style={{
           fontSize: "25px",
-          fontWeight: "bold",
           color: "lightyellow",
-          whiteSpace: "nowrap",
         }}
       >
         {`$ ${subtotal.toFixed(2)}`}

@@ -63,15 +63,10 @@ export default function SelectSizes({ setSelectedSize, selectedSize }) {
         </button>
       </div>
       <button
+        className="all-btn border-0 font-weight-bold w-100"
         type="button"
         onClick={() => setSelectedSize("all")}
         style={{
-          border: "none",
-          fontSize: "12px",
-          fontWeight: "bold",
-          width: "100%",
-          height: "33px",
-          borderRadius: "33px",
           background: selectedSize === "all" && "gray",
         }}
       >

@@ -11,3 +11,10 @@
   font-size: 12px;
   font-weight: bold;
 }
+
+.all-btn {
+  font-size: 12px;
+  height: 33px;
+  border-radius: 33px;
+  margin-bottom: 10px;
+}
